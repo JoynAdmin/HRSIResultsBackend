@@ -6,7 +6,7 @@ import routes from "./routes/routes";
 const app = Express();
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "http://13.38.72.158/:3000",
   })
 );
 app.use(Express.static("public"));
