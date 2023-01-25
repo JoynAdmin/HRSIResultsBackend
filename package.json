@@ -2,13 +2,15 @@
   "name": "hrsibackend",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server.ts",
+  "main": "src/server.js",
+  "type": "commonjs",
   "scripts": {
     "start": "nodemon"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  
   "devDependencies": {
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.15",

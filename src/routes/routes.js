@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const admincontroller_1 = require("../controller/admincontroller");
+const recordcontroller_1 = require("../controller/recordcontroller");
+const routes = (0, express_1.Router)();
+routes.post("/findrecord", recordcontroller_1.recordcontroller);
+routes.post("/admin/records", admincontroller_1.admincontroller);
+routes.get("/admin/records", admincontroller_1.admincontroller);
+exports.default = routes;
